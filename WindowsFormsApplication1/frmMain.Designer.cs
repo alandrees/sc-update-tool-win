@@ -44,6 +44,7 @@
             this.lblText.Text = "DRAG AND DROP FILE HERE";
             this.lblText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblText.DragDrop += new System.Windows.Forms.DragEventHandler(this.do_data_input);
+            this.lblText.DragEnter += new System.Windows.Forms.DragEventHandler(this.frmMain_DragEnter);
             // 
             // frmMain
             // 
@@ -61,8 +62,10 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "SC Upload Tagger";
             this.Load += new System.EventHandler(this.frmMain_Load);
-            this.ResumeLayout(false);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.do_data_input);
+            this.DragEnter += new System.Windows.Forms.DragEventHandler(this.frmMain_DragEnter);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

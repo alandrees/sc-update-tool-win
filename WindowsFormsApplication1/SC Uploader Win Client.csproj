@@ -44,25 +44,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmPrompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrompt.Designer.cs">
+      <DependentUpon>frmPrompt.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmInput.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmInput.Designer.cs">
-      <DependentUpon>frmInput.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmPrompt.resx">
+      <DependentUpon>frmPrompt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmInput.resx">
-      <DependentUpon>frmInput.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
