@@ -68,6 +68,7 @@
             this.Controls.Add(this.lblPrompt);
             this.Controls.Add(this.btnNext);
             this.Name = "frmPrompt";
+            this.Load += new System.EventHandler(this.frmPrompt_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
