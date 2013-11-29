@@ -13,7 +13,8 @@ namespace WindowsFormsApplication1
     public partial class frmPrompt : Form
     {
 
-        string selected_input;
+        int selected_key;
+        string[] keylist;
         
         Dictionary<String, String> param_map = new Dictionary<String, String>();
 
@@ -36,15 +37,26 @@ namespace WindowsFormsApplication1
             this.input_data.Add("mtags", "");
             this.input_data.Add("dls", "");
             this.input_data.Add("private", "");
+
+            this.selected_key = 0;
+            this.keylist = param_map.Keys.ToArray();
+        }
+        
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            this.input_data[this.keylist[this.selected_key]] = txtInput.Text;
+
+            this.selected_key++;
         }
 
-        private void btnNext_Click(object sender, EventArgs e){
-            this.input_data[this.selected_input] = this.txtInput.Text;
+        private void frmPrompt_Load(object sender, EventArgs e)
+        {
 
-            Dictionary<string,String>.KeyCollection keys = this.param_map.Keys;
-
-
-            
         }
+
+        private void populate_form_data()
+        {
+            lblPrompt.Text = this.param_map[this.keylist[this.selected_key]];
+        }            
     }
 }

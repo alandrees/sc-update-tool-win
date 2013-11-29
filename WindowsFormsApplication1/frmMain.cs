@@ -55,7 +55,7 @@ namespace WindowsFormsApplication1
             Form prompt = new frmPrompt();
             prompt.ShowDialog();
 
-            Dictionary<String, String> input_data = prompt.input_data;
+            //Dictionary<String, String> input_data = prompt.input_data;
 
 
         }
