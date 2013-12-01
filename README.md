@@ -4,6 +4,7 @@ sc-update-tool-win
 Tool to assist in properly tagging files for use with the soundcloud updater.  Written in visual studio 2012.
 
 Usage:
+
 1. Create shortcut adding a command-line argument called upload-dir like this:
 upload-dir=C:\sc-uploader\uploads
 
