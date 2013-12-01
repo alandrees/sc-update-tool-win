@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication1
+﻿namespace soundcloud_uploader_client
 {
     partial class frmPrompt
     {
@@ -38,7 +38,7 @@
             this.btnNext.Location = new System.Drawing.Point(11, 75);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(75, 23);
-            this.btnNext.TabIndex = 0;
+            this.btnNext.TabIndex = 1;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
@@ -57,7 +57,8 @@
             this.txtInput.Location = new System.Drawing.Point(12, 38);
             this.txtInput.Name = "txtInput";
             this.txtInput.Size = new System.Drawing.Size(526, 26);
-            this.txtInput.TabIndex = 2;
+            this.txtInput.TabIndex = 0;
+            this.txtInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtInput_KeyDown);
             // 
             // frmPrompt
             // 
@@ -69,6 +70,7 @@
             this.Controls.Add(this.btnNext);
             this.Name = "frmPrompt";
             this.Load += new System.EventHandler(this.frmPrompt_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmPrompt_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

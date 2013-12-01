@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication1
+﻿namespace soundcloud_uploader_client
 {
     partial class frmMain
     {
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.lblText = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -43,6 +44,7 @@
             this.lblText.TabIndex = 0;
             this.lblText.Text = "DRAG AND DROP FILE HERE";
             this.lblText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblText.Click += new System.EventHandler(this.lblText_Click);
             this.lblText.DragDrop += new System.Windows.Forms.DragEventHandler(this.do_data_input);
             this.lblText.DragEnter += new System.Windows.Forms.DragEventHandler(this.frmMain_DragEnter);
             // 
@@ -54,16 +56,20 @@
             this.ClientSize = new System.Drawing.Size(234, 173);
             this.Controls.Add(this.lblText);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(250, 211);
             this.MinimumSize = new System.Drawing.Size(250, 211);
             this.Name = "frmMain";
-            this.Opacity = 0.5D;
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "SC Upload Tagger";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.do_data_input);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.frmMain_DragEnter);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
+            this.Resize += new System.EventHandler(this.frmMain_Resize);
             this.ResumeLayout(false);
 
         }

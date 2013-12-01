@@ -18,3 +18,4 @@ H:\Desktop\soundcloud-win\sc-win\sc-update-tool-win\WindowsFormsApplication1\obj
 H:\Desktop\soundcloud-win\sc-win\sc-update-tool-win\WindowsFormsApplication1\obj\Debug\SC Uploader Win Client.csproj.GenerateResource.Cache
 H:\Desktop\soundcloud-win\sc-win\sc-update-tool-win\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
 H:\Desktop\soundcloud-win\sc-win\sc-update-tool-win\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\loridcon\Documents\Visual Studio 2012\Projects\sc-update-tool-win\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmCopying.resources

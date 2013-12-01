@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SC Uploader Win Client", "WindowsFormsApplication1\SC Uploader Win Client.csproj", "{9586CDC5-0549-47EF-90A3-F268A56BA25C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SC Uploader Windows Wizard", "WindowsFormsApplication1\SC Uploader Windows Wizard.csproj", "{9586CDC5-0549-47EF-90A3-F268A56BA25C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication1
+namespace soundcloud_uploader_client
 {
     public partial class frmPrompt : Form
     {
@@ -20,12 +20,12 @@ namespace WindowsFormsApplication1
 
         public Dictionary<String, String> input_data = new Dictionary<String, String>();
       
-        public frmPrompt()
+        public frmPrompt(string filename)
         {
             InitializeComponent();
 
-            this.param_map.Add("title", "Track Title: ");
-            this.param_map.Add("genre", "Genre: ");
+            this.param_map.Add("title", "Track Title (required): ");
+            this.param_map.Add("genre", "Genre (required): ");
             this.param_map.Add("sc_tags", "Soundcloud Tags (Comma separated): ");
             this.param_map.Add("mtags", "Meta Tags: ");
             this.param_map.Add("dls", "Make this track Downloadable? (Yes or No): ");
@@ -40,23 +40,60 @@ namespace WindowsFormsApplication1
 
             this.selected_key = 0;
             this.keylist = param_map.Keys.ToArray();
+            this.Text = filename;
         }
         
         private void btnNext_Click(object sender, EventArgs e)
         {
-            this.input_data[this.keylist[this.selected_key]] = txtInput.Text;
+            if (this.selected_key < (this.param_map.Count() - 2))
+            {
+                this.input_data[this.keylist[this.selected_key]] = txtInput.Text;   
+                this.selected_key++;
+                this.populate_form_data();
+                txtInput.Text = "";
+                this.txtInput.Focus();
 
-            this.selected_key++;
+            }
+            else if (((this.param_map.Count() - 1) - this.selected_key) == 1)
+            {
+                this.input_data[this.keylist[this.selected_key]] = txtInput.Text;
+                this.btnNext.Text = "Finish";
+                this.selected_key++;
+                this.populate_form_data();
+                this.txtInput.Text = "";
+                this.txtInput.Focus();
+            }
+            else if ((this.param_map.Count() - 1) == this.selected_key)
+            {
+                this.input_data[this.keylist[this.selected_key]] = txtInput.Text;
+                this.Hide();
+            }
         }
 
         private void frmPrompt_Load(object sender, EventArgs e)
         {
-
+            this.populate_form_data();
+            this.txtInput.Focus();
         }
 
         private void populate_form_data()
         {
             lblPrompt.Text = this.param_map[this.keylist[this.selected_key]];
+        }
+
+        private void txtInput_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.btnNext.PerformClick();
+            }
+        }
+
+        private void frmPrompt_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Escape) {
+                this.WindowState = FormWindowState.Normal;
+                this.Visible = false;
+            }
         }            
     }
 }
