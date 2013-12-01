@@ -1,1 +1,0 @@
-C:\Users\loridcon\Documents\Visual Studio 2012\Projects\sc-update-tool-win\WindowsFormsApplication1\bin\Debug\sc_uploader_client.exe.config
