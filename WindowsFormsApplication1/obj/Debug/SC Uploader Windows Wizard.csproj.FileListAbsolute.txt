@@ -1,12 +1,1 @@
-C:\Users\loridcon\Documents\Visual Studio 2012\Projects\sc-update-tool-win\WindowsFormsApplication1\obj\Debug\SC Uploader Windows Wizard.csprojResolveAssemblyReference.cache
-C:\Users\loridcon\Documents\Visual Studio 2012\Projects\sc-update-tool-win\WindowsFormsApplication1\obj\Debug\SC Uploader Windows Wizard.csproj.GenerateResource.Cache
-C:\Users\loridcon\Documents\Visual Studio 2012\Projects\sc-update-tool-win\WindowsFormsApplication1\bin\Debug\soundcloud-4part.ico
 C:\Users\loridcon\Documents\Visual Studio 2012\Projects\sc-update-tool-win\WindowsFormsApplication1\bin\Debug\sc_uploader_client.exe.config
-C:\Users\loridcon\Documents\Visual Studio 2012\Projects\sc-update-tool-win\WindowsFormsApplication1\obj\Debug\soundcloud_uploader_client.frmCopying.resources
-C:\Users\loridcon\Documents\Visual Studio 2012\Projects\sc-update-tool-win\WindowsFormsApplication1\obj\Debug\soundcloud_uploader_client.frmPrompt.resources
-C:\Users\loridcon\Documents\Visual Studio 2012\Projects\sc-update-tool-win\WindowsFormsApplication1\obj\Debug\soundcloud_uploader_client.frmMain.resources
-C:\Users\loridcon\Documents\Visual Studio 2012\Projects\sc-update-tool-win\WindowsFormsApplication1\obj\Debug\soundcloud_uploader_client.Properties.Resources.resources
-C:\Users\loridcon\Documents\Visual Studio 2012\Projects\sc-update-tool-win\WindowsFormsApplication1\bin\Debug\sc_uploader_client.exe
-C:\Users\loridcon\Documents\Visual Studio 2012\Projects\sc-update-tool-win\WindowsFormsApplication1\bin\Debug\sc_uploader_client.pdb
-C:\Users\loridcon\Documents\Visual Studio 2012\Projects\sc-update-tool-win\WindowsFormsApplication1\obj\Debug\sc_uploader_client.exe
-C:\Users\loridcon\Documents\Visual Studio 2012\Projects\sc-update-tool-win\WindowsFormsApplication1\obj\Debug\sc_uploader_client.pdb

@@ -33,7 +33,6 @@ namespace soundcloud_uploader_client
     class AppClass{
         NotifyIcon notify_icon;
         frmMain mainWindow;
-        ContextMenu exitmenu;
         ControlContainer container;
         string upload_dir;
         /// <summary>
