@@ -15,6 +15,13 @@ upload-dir=C:\sc-uploader\uploads
 4. Upload to soundcloud!
 
 
+Notes: 
+- The downloadable and private flags are not yet functioning, either in the frontend (disabled) or backend (un-implemented).
+
+- The icon must go in the same directory as the executable (for now).
+
+- You don't need to specify a directory on the commandline, as the program defaults to ./uploads
+
 
 
 
