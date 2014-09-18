@@ -41,6 +41,8 @@ namespace soundcloud_uploader_client
 
         public AppClass(string dir = "./upload")
         {
+
+            this.upload_dir = dir;
             this.container = new ControlContainer();
             this.notify_icon = new NotifyIcon(this.container);
             this.mainWindow = new frmMain(this.upload_dir);
